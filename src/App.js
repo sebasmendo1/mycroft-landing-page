@@ -12,6 +12,10 @@ import polls from './images/icons/icon-polls.svg'
 import screenshare from './images/icons/icon-screenshare.svg'
 import whiteboard from './images/icons/icon-whiteboard.svg'
 
+import enhanced_lobby from './images/feature-enhanced-lobby.png'
+import full_time_support from './images/feature-full-time-support.png'
+import security from './images/feature-security.png'
+
 function App() {
   return (
     <div className="App">
@@ -42,29 +46,34 @@ function App() {
             </div>
           </div>
 
-        <div className="features"> 
-          <div className="feature-left">
-            <image></image>
+        <div className="highlights"> 
+          <div className="section-left">
+            <img className="highlight-image" src={enhanced_lobby}></img>
             <div>
               <h3>Enhanced Lobby</h3>
               <p>Mycroft is designed to incorporate the best elements from the in-person facility experience.  While participants wait in the lobby, researchers have the ability to invite people to a 1-on1 video chat rescreen to ensure you are selecting the best to participate..  Respondents can receive an additional survey upon entry, with instant results for review.  </p>
             </div>
           </div>
 
-          <div className="feature-right">
+          <div className="section-right">
             <div>
               <h3>Full-Time Support</h3>
               <p>With Mycroft, you can expect top-notch support from project kick-off through file delivery.  We take on the extra tasks of running tech checks with each respondent ahead of their participation day, all stim and poll uploads, and live support in each session to ensure all participant and client issuers are resolved, should any arise.</p>
             </div>
-            <image></image>
+            <img className="highlight-image" src={full_time_support}></img>
           </div>
 
-          <div className="feature-left">
-            <image></image>
+          <div className="section-left">
+            <img 
+              className="highlight-image" 
+              src={security}>
+            </img>
+
             <div>
               <h3>Security</h3>
               <p>Privacy is paramount in market research.  Mycroft is built on Amazon Web Services, which has security practices second to none.  On top of that, we do all we can to ensure participant information and stimulus is protected, with password-protected sessions, respondent-specific watermark overlay on stimulus, and data destruction after 90 days.</p>
             </div>
+            
           </div>
         
         </div>
